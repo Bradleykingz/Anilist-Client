@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo_al"
+            android:contentDescription="@string/logo_desc"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:hint="Username"
+            android:layout_width="match_parent"
+            android:id="@+id/username"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:textColorHint="@color/anilist_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Password"
+            android:id="@+id/password"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Login"
+            android:textColor="@color/textPrimary"
+            android:id="@+id/login"
+            style="?attr/borderlessButtonStyle"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/login_with_anilist"
+            android:textAllCaps="false"
+            android:id="@+id/loginAnilist"
+            android:padding="15dp"
+            android:background="@color/anilist_blue"
+            android:textColor="@color/white"
+            style="?attr/borderlessButtonStyle"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
